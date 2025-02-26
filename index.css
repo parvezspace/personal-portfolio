@@ -7,29 +7,30 @@ body {
     font-style: normal;
     line-height: 1.75em;
     /* width: 884px; */
-    margin: 0px 60px 0 60px;
+    /* margin: 0px 60px 0 60px; */
+    margin: 0 5%;
 }
 .logo {
     display: inline-block;
     /* display: flex; */
-    align-items: center;
-    justify-content: center;
     width: 42px;
     height: 42px;
     line-height: 42px;
     font-size: 25px;
     color: #fff;
     background-color: #007bff;
-    border-radius: 1000px;
+    border-radius: 50%;
     /* margin-bottom: px; */
 }
 div.header {
     display: flex;
-    height: 25%;
-    width: 100%;
+    /* height: 25%;
+    width: 100%; */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 0px 0px 0px;
+    /* padding: 50px 0px 0px 0px; */
+    padding: 30px 0;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -78,13 +79,11 @@ span {
 }
 img {
     display: inline-block;
-    width: 338.66px;
+    max-width: 100%;
     height: 337.86px;
     position: absolute;
-    /* padding-bottom: calc(100% - 36px); */
-    border-radius: 1000px;
-    /* overflow: hidden; */
-    /* background-color: #444; */
+    border-radius: 50%;
+    margin: auto;
     border: 18px solid #444;
     box-shadow: 0px 0px 25px 0px black;
     top: 180px;
@@ -123,6 +122,7 @@ p {
 .profile-info {
     display: inline-block;
     width: 516.13px;
+    max-width: 600px;
     height: 283.1px;
     padding: 100px 0 0 140px;
     border: 1px solid black;
@@ -196,4 +196,25 @@ li {
 .temp h4 {
     font-size: 20px;
     color: #d5d5d5;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-button {
+        flex-direction: column;
+    }
 }
