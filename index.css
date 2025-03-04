@@ -7,30 +7,29 @@ body {
     font-style: normal;
     line-height: 1.75em;
     /* width: 884px; */
-    /* margin: 0px 60px 0 60px; */
-    margin: 0 5%;
+    margin: 0px 60px 0 60px;
 }
 .logo {
     display: inline-block;
     /* display: flex; */
+    align-items: center;
+    justify-content: center;
     width: 42px;
     height: 42px;
     line-height: 42px;
     font-size: 25px;
     color: #fff;
     background-color: #007bff;
-    border-radius: 50%;
+    border-radius: 1000px;
     /* margin-bottom: px; */
 }
 div.header {
     display: flex;
-    /* height: 25%;
-    width: 100%; */
-    flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
-    /* padding: 50px 0px 0px 0px; */
-    padding: 30px 0;
+    padding: 50px 0px 0px 0px;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -39,8 +38,10 @@ div.logo-text {
     display: inline-block;
     font-size: 25px;
     font-weight: 550;
-    color: #fff;
+    color: white;
     text-align: center;
+    /* gap: 100%; */
+    padding-left: 5px;
 
 }
 span {
@@ -79,11 +80,13 @@ span {
 }
 img {
     display: inline-block;
-    max-width: 100%;
+    width: 338.66px;
     height: 337.86px;
     position: absolute;
-    border-radius: 50%;
-    margin: auto;
+    /* padding-bottom: calc(100% - 36px); */
+    border-radius: 1000px;
+    /* overflow: hidden; */
+    /* background-color: #444; */
     border: 18px solid #444;
     box-shadow: 0px 0px 25px 0px black;
     top: 180px;
@@ -122,7 +125,6 @@ p {
 .profile-info {
     display: inline-block;
     width: 516.13px;
-    max-width: 600px;
     height: 283.1px;
     padding: 100px 0 0 140px;
     border: 1px solid black;
@@ -131,7 +133,7 @@ p {
 .profile-button {
     display: flex;
     gap: 1%;
-    width: 100%;
+    width: 50%;
     height: 52px;
     justify-content: center;
     align-items: center;
@@ -139,7 +141,7 @@ p {
     height: 52.9px;
     position: absolute;
     bottom: 150px;
-    left: 9%;
+    left: 33%;
     color: #fff;
 }
 .profile-button a {
@@ -157,6 +159,9 @@ p {
     border: 2px solid #007ced
 
 }
+.viewCV-button a:hover {
+    color: #007bff;
+}
 .contact-button  {
     display: flex;
     align-items: center;
@@ -168,6 +173,9 @@ p {
     background-color: #333;
     color: #fff;
     border: 2px solid #fff;
+}
+.contact-button a:hover {
+    color: #fff;
 }
 .title {
     display: flex;
@@ -186,7 +194,7 @@ li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 914.8px;
+    /* width: 914.8px; */
     height: 500px;
     padding: 0 5%;
     justify-content: space-around;
@@ -196,25 +204,4 @@ li {
 .temp h4 {
     font-size: 20px;
     color: #d5d5d5;
-}
-
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .profile-content {
-        flex-direction: column;
-    }
-
-    .profile-button {
-        flex-direction: column;
-    }
 }
